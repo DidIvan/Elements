@@ -2,8 +2,8 @@ window.onload = function () {
     const prev = document.querySelector('.prev');
     const next = document.querySelector('.next');
     const image = document.querySelectorAll('.photos img');
+
     let i = 0;
-    console.log(image)
     prev.onclick = function () {
         image[i].className = '';
         i--;
@@ -19,6 +19,5 @@ window.onload = function () {
             i = 0;
         }
         image[i].className = "showed"
-
     }
 };
