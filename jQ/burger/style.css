@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .menu-link {
     display: block;
     width: 50px;
@@ -7,7 +12,8 @@
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .4);
     position: fixed;
     top: 40px;
-    left: 40px
+    left: 40px;
+    z-index: 1;
 }
 
 .menu-link span, .menu-link span:before, .menu-link span:after {
@@ -49,7 +55,7 @@
     transform: rotate(-135deg);
     top: 0;
 }
-
+/*стили для меню*/
 .menu {
     background: #3498db;
     width: 100vw;
@@ -57,6 +63,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    left: -100vw;
+    transition: all .3s;
+}
+/*класс для выезда меню*/
+.menu_active {
+ left: 0;
 }
 
 .menu ul {
@@ -79,4 +92,14 @@
     display: block;
     background: rgba(255, 255, 255, 0.3);
 
+}
+
+section{
+    height: 100vh;
+    background: #e6b86f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
 }

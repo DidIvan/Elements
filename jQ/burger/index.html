@@ -13,19 +13,81 @@
 </a>
 <div class="menu">
     <ul>
-        <li><a href="#">Пункт 1</a></li>
-        <li><a href="#">Пункт 2</a></li>
-        <li><a href="#">Пункт 3</a></li>
-        <li><a href="#">Пункт 4</a></li>
-        <li><a href="#">Пункт 5</a></li>
+        <li><a href="#one">Пункт 1</a></li>
+        <li><a href="#two">Пункт 2</a></li>
+        <li><a href="#three">Пункт 3</a></li>
+        <li><a href="#four">Пункт 4</a></li>
+        <li><a href="#five">Пункт 5</a></li>
     </ul>
 </div>
+
+<section id="one">
+    <h1>One</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ea inventore ipsa ipsam molestiae omnis
+        optio reiciendis unde. Aliquam corporis debitis dolorem illo in modi mollitia odio optio praesentium quas vitae,
+        voluptatem. Adipisci consequuntur eligendi perspiciatis quibusdam. Aliquam animi corporis cum doloremque eaque,
+        eius enim error est facere fugit illo laborum minima minus nam natus nobis non odio perferendis quae quibusdam
+        quisquam ratione repellat repellendus similique soluta veritatis voluptatibus! Dolor enim nihil non obcaecati
+        omnis sed! Ab id libero maxime nesciunt unde vel voluptatum? Aspernatur, at aut cumque in necessitatibus nihil
+        obcaecati rerum. Ipsa libero quia reiciendis! Eaque, facere, ullam.</p>
+</section>
+<section id="two">
+    <h1>TWO</h1>
+    <p>Accusamus asperiores cupiditate, dignissimos facilis fuga fugiat hic nostrum numquam officiis quidem quo rem
+        tempore tenetur voluptate voluptates? A delectus ea eligendi est facilis, fugiat ipsam laborum molestiae
+        molestias, necessitatibus nisi provident quaerat quasi quo quos! Esse iste iure molestias possimus. Aliquam
+        harum iusto laboriosam magni odit reiciendis sed? Facere illum magnam minus mollitia necessitatibus officia
+        placeat possimus velit. Accusantium adipisci beatae dolores harum molestias, nostrum nulla provident quasi saepe
+        veniam. Alias consectetur excepturi, laudantium magni minima modi optio pariatur quae repellat. Accusamus
+        aliquid delectus doloremque harum ipsum itaque laboriosam minima molestias nam, necessitatibus nobis quae, quo
+        recusandae vel velit?</p>
+</section>
+<section id="three">
+    <h1>THREE</h1>
+    <p>Architecto atque consequuntur excepturi ipsa nulla quia sapiente. Ab, adipisci, alias amet eum id inventore
+        magnam magni non provident quaerat qui saepe sapiente tempora, voluptatem voluptatibus? Minima, nobis possimus?
+        Esse harum nam nulla quisquam rerum. Aliquid amet beatae dignissimos, doloribus dolorum eligendi facilis illo
+        maxime minus, odio placeat quidem quos recusandae sapiente, tempore unde voluptas voluptates! Architecto fuga
+        officia praesentium? A aspernatur at, commodi cumque dolore ex exercitationem ipsa laboriosam, minus molestiae
+        mollitia nesciunt officiis omnis pariatur praesentium sed similique! Amet at atque ea eius eligendi error
+        eveniet ipsam necessitatibus, nobis non nulla obcaecati officia perferendis qui sint tenetur vitae.</p>
+</section>
+<section id="four">
+    <h1>FOUR</h1>
+    <p>Consectetur deleniti dignissimos fuga fugit necessitatibus officiis quos rerum velit veniam vitae. Accusamus ad
+        alias aperiam atque dicta dolorum esse facere harum incidunt iste itaque, neque nisi odit officiis porro, quasi
+        qui quia quo repellendus rerum sed similique sint sunt suscipit tempore voluptates voluptatum! Atque beatae
+        commodi, delectus ea eum illo incidunt maxime molestiae molestias obcaecati officia perferendis placeat
+        praesentium quasi rerum saepe sunt veniam. Aspernatur eos molestias tempore vitae. Aperiam aut consequatur
+        corporis distinctio dolore eaque eveniet expedita iusto libero maiores maxime, molestiae nihil numquam, omnis,
+        optio perspiciatis quasi quia rem reprehenderit voluptatibus. Animi ipsum neque ut vel voluptatem?</p>
+</section>
+<section id="five">
+    <h1>FIVE</h1>
+    <p>Aliquam assumenda atque beatae blanditiis commodi consectetur cum debitis dignissimos doloremque dolores
+        doloribus impedit itaque magnam maxime nihil, nobis odio odit officiis pariatur porro praesentium quae quas quos
+        rem, repellat soluta sunt tenetur ut velit voluptatum? Accusamus eveniet illo officia quas recusandae, sunt ut!
+        Ab amet consectetur dolores ducimus error incidunt libero, non quae quaerat qui ratione velit vitae? Animi aut
+        consequatur illum maxime omnis perferendis totam? Aut eius exercitationem fugit ipsam iusto molestiae nesciunt
+        odio sequi unde vitae? A aspernatur assumenda atque consectetur eaque explicabo facere illum ipsam minima minus
+        omnis quas quia recusandae reiciendis sapiente sed totam, vel.</p>
+</section>
 <script>
     $(document).ready(function () {
         var link = $('.menu-link');
-        //по клику добавляем новый класс который
+        var menu = $('.menu');
+        var nav_link = $('.menu a');
+        //по клику добавляем новый класс
         link.click(function () {
-            link.toggleClass('menu-link_active')
+            link.toggleClass('menu-link_active');
+            //выезжает меню
+            menu.toggleClass("menu_active")
+        });
+
+        //скидываем добавленые классы
+        nav_link.click(function () {
+            link.toggleClass('menu-link_active');
+            menu.toggleClass("menu_active")
         })
     });
 </script>
