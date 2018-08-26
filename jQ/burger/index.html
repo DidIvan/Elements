@@ -5,7 +5,7 @@
     <title>Burger</title>
     <link rel="stylesheet" href="style.css">
     <script src="../public/js/jquery-3.1.0.min.js"></script>
-    <script src=""></script>
+    <script src="burger.js"></script>
 </head>
 <body>
 <a href="#" class="menu-link">
@@ -72,24 +72,5 @@
         odio sequi unde vitae? A aspernatur assumenda atque consectetur eaque explicabo facere illum ipsam minima minus
         omnis quas quia recusandae reiciendis sapiente sed totam, vel.</p>
 </section>
-<script>
-    $(document).ready(function () {
-        var link = $('.menu-link');
-        var menu = $('.menu');
-        var nav_link = $('.menu a');
-        //по клику добавляем новый класс
-        link.click(function () {
-            link.toggleClass('menu-link_active');
-            //выезжает меню
-            menu.toggleClass("menu_active")
-        });
-
-        //скидываем добавленые классы
-        nav_link.click(function () {
-            link.toggleClass('menu-link_active');
-            menu.toggleClass("menu_active")
-        })
-    });
-</script>
 </body>
 </html>
