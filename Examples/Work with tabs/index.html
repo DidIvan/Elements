@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    .tab {
+        display: inline;
+        padding: 5px 10px;
+        position: relative;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    .tabContent {
+        width: 300px;
+        height: 60px;
+        border: 1px solid #707070;
+        padding: 10px;
+        position: relative;
+        top: -1px;
+        border-radius: 0 0 3px 3px;
+        z-index: 1;
+    }
+
+    .whiteborder {
+        border: 1px solid #707070;
+        border-bottom: 1px solid #ffffff;
+        border-radius: 3px 3px 0 0;
+    }
+    .hide{
+        display: none;
+    }
+    .show{
+        display: block;
+    }
+</style>
+<h1>Work with *Tabs*</h1>
+<div id="tabs">
+    <div class="tab whiteborder">Tab 1</div>
+    <div class="tab">Tab 2</div>
+    <div class="tab">Tab 3</div>
+    <div class="tab">Tab 4</div>
+    <div class="tabContent">1</div>
+    <div class="tabContent">2</div>
+    <div class="tabContent">3</div>
+    <div class="tabContent">4</div>
+</div>
+
+</body>
+</html>
