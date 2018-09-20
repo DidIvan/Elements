@@ -6,3 +6,12 @@ function select() {
     console.log(options);
     console.log('selected option ' + options[index].text);
 }
+
+function range() {
+    let range = document.getElementById('range');
+    let inputValue = document.getElementById('inputValue');
+    inputValue.innerHTML = range.value;
+
+    let inputOne = document.getElementById('inputOne');
+    inputOne.value = range.value;
+}
